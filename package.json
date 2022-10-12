@@ -1,0 +1,38 @@
+{
+  "name": "xphage",
+  "version": "0.0.0",
+  "description": "X Phage is a highly organised JavaScript utility library!",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "pack": "tsup src/index.ts --format cjs,esm",
+    "esm": "tsup src/index.ts --format cjs,esm && node index.mjs",
+    "cjs": "node index.js",
+    "go": "tsup src/index.ts --format cjs,esm && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xphage/xphage.git"
+  },
+  "keywords": [
+    "countif",
+    "count-if",
+    "types",
+    "utility",
+    "array",
+    "ndarray",
+    "object",
+    "binary",
+    "tree"
+  ],
+  "author": "intfract",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xphage/xphage/issues"
+  },
+  "homepage": "https://github.com/xphage/xphage#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "tsup": "^6.2.3"
+  }
+}

@@ -1,39 +1,5 @@
-# X Phage
+import * as _ from './dist/index.mjs'
 
-X Phage is a highly organised JavaScript **utility** library! 
-
-![Stars](https://img.shields.io/github/stars/xphage/xphage?colorA=%232f3136&colorB=%235865f2&label=Stars&style=for-the-badge)
-
-## Install 
-
-```sh
-npm i xphage
-```
-
-## Import 
-
-### CJS
-
-```js
-const _ = require('xphage')
-```
-
-### ESM
-
-```js
-import * as _ from 'xphage'
-```
-
-## Integrate 
-
-X Phage is home to some of the most **powerful** methods in existence! 
-- `_.eq` checks if multiple values are identical and works with `Array` and `Object`! 
-- `_.must` serves as a callback function that dynamically converts `String` to `Boolean` expressions to compare `Object` types! 
-- `_.countif` counts the number of items in an `Array` that satisfy the dynamic `String` expression!
-
-X Phage still has much more to offer. Take a look for yourself! 
-
-```js
 console.log(_.eq([], []))
 console.log(_.eq([0, 'text'], [0, 'text']))
 console.log(_.eq([0, 'text', [], {}], [0, 'text', [], {}]))
@@ -168,4 +134,3 @@ console.log(_.insert(0, nums, _.searchFit(nums, 0)[0]))
 
 console.log(_.insertSorted(1.5, nums))
 // [0, 1, 1.5, 2, 3, 4]
-```
